@@ -1,0 +1,15 @@
+Package: index0
+Title: Zero-Based Indexing in R
+Version: 0.0.0.9000
+Authors@R: 
+    person("David Antony", "Selby", , "david.selby@manchester.ac.uk",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8026-5663"))
+Description: Extract and replace elements using indices that start from zero (rather than one), as is common in mathematical notation and other programming languages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
