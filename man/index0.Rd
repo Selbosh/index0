@@ -8,6 +8,7 @@
 \alias{as.index1}
 \alias{is.index0}
 \alias{index_from_0}
+\alias{print.index0}
 \title{Zero-based indexing of vectors}
 \source{
 Partially inspired by this Stack Overflow answer:
@@ -25,6 +26,8 @@ as.index1(x)
 is.index0(x)
 
 index_from_0(x)
+
+\method{print}{index0}(x, ...)
 }
 \arguments{
 \item{x}{object from which to extract element(s) or in which to replace element(s)}

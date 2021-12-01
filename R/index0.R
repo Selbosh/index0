@@ -77,3 +77,11 @@ is.index0 <- function(x) {
 #' @rdname index0
 #' @export
 index_from_0 <- as.index0
+
+#' @rdname index0
+#' @export
+print.index0 <- function(x, ...) {
+  print(as.index1(x))
+  cat('indexed from 0\n')
+  invisible(x)
+}
