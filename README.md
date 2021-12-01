@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/Selbosh/index0/workflows/R-CMD-check/badge.svg)](https://github.com/Selbosh/index0/actions)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/index0)](https://CRAN.R-project.org/package=index0)
 <!-- badges: end -->
 
 The R programming language uses indices that start from 1, but sometimes
@@ -15,7 +17,7 @@ Python.
 
 ## Installation
 
-Install the development version of index0 from GitHub with:
+Install the development version of **index0** from GitHub with:
 
 ``` r
 # install.packages("remotes")

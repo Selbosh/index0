@@ -7,6 +7,7 @@ Authors@R:
            comment = c(ORCID = "0000-0001-8026-5663"))
 Description: Extract and replace elements using indices that start from zero (rather than one), as is common in mathematical notation and other programming languages.
 License: MIT + file LICENSE
+Language: en-GB
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
