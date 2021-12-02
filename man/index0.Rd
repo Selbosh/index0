@@ -38,10 +38,24 @@ index_from_0(x)
 
 \item{value}{typically an array-like \R object of a similar class as \code{x}.}
 }
+\value{
+\code{as.index0} returns the input (typically a vector or matrix) unchanged except
+for the addition of an \code{index0} class attribute, which enables the zero-based
+indexing behaviour. Use \code{as.index1} to remove this class again, if present.
+
+If \code{x} is a zero-indexed object with class \code{index0}, then \code{x[i]} returns an
+appropriate subset of \code{x}. The returned subset is also zero-indexed.
+\code{x[i] <- value} changes the \code{i}th element (effectively \code{(i+1)}th element in
+ordinary R code) in place.
+
+\code{is.index0(x)} returns \code{TRUE} if \code{x} is indexed from zero, otherwise \code{FALSE}.
+}
 \description{
 Normally R is indexed from 1, but with the special \code{index0} class, you can
 have vectors that are indexed from zero. Works both for subsetting (extraction)
 and (sub-)assignment.
+An \code{index0} object is just like a normal vector or matrix, but \code{x[i]} returns
+or replaces the \code{(i+1)}th index.
 }
 \details{
 Assign the class \code{index0} to a vector, using \code{as.index0()} or \code{index_from_0()},

@@ -3,6 +3,8 @@
 #' Normally R is indexed from 1, but with the special `index0` class, you can
 #' have vectors that are indexed from zero. Works both for subsetting (extraction)
 #' and (sub-)assignment.
+#' An `index0` object is just like a normal vector or matrix, but `x[i]` returns
+#' or replaces the `(i+1)`th index.
 #'
 #' Assign the class `index0` to a vector, using `as.index0()` or `index_from_0()`,
 #' then use the subset operators normally and they will be indexed from zero.
@@ -29,6 +31,18 @@
 #' m[0, 1]
 #' m[0, 1] <- 99
 #' m
+#' 
+#' @return
+#' `as.index0` returns the input (typically a vector or matrix) unchanged except
+#' for the addition of an `index0` class attribute, which enables the zero-based
+#' indexing behaviour. Use `as.index1` to remove this class again, if present.
+#' 
+#' If `x` is a zero-indexed object with class `index0`, then `x[i]` returns an
+#' appropriate subset of `x`. The returned subset is also zero-indexed.
+#' `x[i] <- value` changes the `i`th element (effectively `(i+1)`th element in
+#' ordinary R code) in place.
+#' 
+#' `is.index0(x)` returns `TRUE` if `x` is indexed from zero, otherwise `FALSE`.
 #'
 #' @source
 #' Partially inspired by this Stack Overflow answer:
