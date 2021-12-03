@@ -17,7 +17,13 @@ Python.
 
 ## Installation
 
-Install the development version of **index0** from GitHub with:
+Install the **index0** package from CRAN using:
+
+``` r
+install.packages('index0')
+```
+
+Or you can get the latest development version from GitHub with:
 
 ``` r
 # install.packages("remotes")
