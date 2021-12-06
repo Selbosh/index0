@@ -2,6 +2,7 @@
 
 S3method("[",index0)
 S3method("[<-",index0)
+S3method(c,index0)
 S3method(head,index0)
 S3method(print,index0)
 S3method(tail,index0)
