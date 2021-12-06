@@ -99,3 +99,12 @@ print.index0 <- function(x, ...) {
   cat('indexed from 0\n')
   invisible(x)
 }
+
+#' @rdname index0
+#' @param object An object to inspect, of class `index0`.
+#' @export
+str.index0 <- function(object, ...) {
+  object <- as.index1(object)
+  cat('zero-indexed')
+  NextMethod()
+}

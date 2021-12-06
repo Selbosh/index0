@@ -9,6 +9,7 @@
 \alias{is.index0}
 \alias{index_from_0}
 \alias{print.index0}
+\alias{str.index0}
 \title{Zero-based indexing of vectors}
 \source{
 Partially inspired by this Stack Overflow answer:
@@ -28,6 +29,8 @@ is.index0(x)
 index_from_0(x)
 
 \method{print}{index0}(x, ...)
+
+\method{str}{index0}(object, ...)
 }
 \arguments{
 \item{x}{object from which to extract element(s) or in which to replace element(s)}
@@ -37,6 +40,8 @@ index_from_0(x)
 \item{...}{other arguments passed to generic methods.}
 
 \item{value}{typically an array-like \R object of a similar class as \code{x}.}
+
+\item{object}{An object to inspect, of class \code{index0}.}
 }
 \value{
 \code{as.index0} returns the input (typically a vector or matrix) unchanged except
