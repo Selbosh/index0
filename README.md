@@ -48,10 +48,10 @@ our set?
 
 ``` r
 letters0[0]
-#> [1] "a"
+#> [0] "a"
 #> indexed from 0
 numbers0[0]
-#> [1] 2
+#> [0] 2
 #> indexed from 0
 ```
 
@@ -59,7 +59,7 @@ What are the first, second and fourth letters?
 
 ``` r
 letters0[c(1, 2, 4)]
-#> [1] "b" "c" "e"
+#> [0] "b" "c" "e"
 #> indexed from 0
 ```
 
@@ -68,6 +68,6 @@ Replace the first and third numbers with `NA`:
 ``` r
 numbers0[c(1, 3)] <- NA
 numbers0
-#> [1]  2 NA  4 NA  6
+#> [0]  2 NA  4 NA  6
 #> indexed from 0
 ```

@@ -1,6 +1,6 @@
 Package: index0
 Title: Zero-Based Indexing in R
-Version: 0.0.2
+Version: 0.0.3.9000
 Authors@R: 
     person("David Antony", "Selby", , "david.selby@manchester.ac.uk",
            role = c("aut", "cre"),
